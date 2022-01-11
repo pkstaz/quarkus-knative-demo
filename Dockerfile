@@ -4,7 +4,7 @@ COPY target/*-runner.jar /work
 RUN ls /work/
 RUN ls /home/quarkus
 # RUN chmod 775 /work
-EXPOSE 8080
+# EXPOSE 8080
 
 # USER 1001
 
