@@ -19,7 +19,7 @@ ENV JAVA_OPTIONS="-Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jb
 ENV AB_ENABLED=jmx_exporter
 
 # Be prepared for running in OpenShift too
-RUN mvn package && docker build -f src/main/docker/Dockerfile.jvm -t quarkus/cache-quickstart-jvm .
+RUN docker build -f src/main/docker/Dockerfile.jvm -t quarkus/cache-quickstart-jvm .
 
 RUN adduser -G root --no-create-home --disabled-password 1001 \
   && chown -R 1001 /deployments \
