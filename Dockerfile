@@ -1,6 +1,6 @@
 FROM registry.access.redhat.com/ubi8/ubi-minimal
 WORKDIR /work/
-COPY target/*-runner /work/application
+COPY target/*-runner.jar /work/application
 RUN chmod 775 /work
 EXPOSE 8080
 
