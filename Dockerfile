@@ -6,6 +6,6 @@ RUN ls /home/quarkus
 # RUN chmod 775 /work
 EXPOSE 8080
 
-USER 1001
+# USER 1001
 
 # CMD ["./*.jar", "-Dquarkus.http.host=0.0.0.0"]
