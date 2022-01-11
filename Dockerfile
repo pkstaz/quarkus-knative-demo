@@ -1,5 +1,5 @@
-FROM registry.access.redhat.com/openjdk/openjdk-11-rhel7:1.10-1.1638429558
-# WORKDIR /work/
+FROM registry.access.redhat.com/ubi8/openjdk-8:1.10-10.1638383025
+WORKDIR /home/jboss
 # COPY target/*-runner /work/application
 # RUN chmod 775 /work
 # EXPOSE 8080
