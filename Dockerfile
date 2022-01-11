@@ -1,6 +1,7 @@
 FROM registry.access.redhat.com/quarkus/mandrel-21-rhel8:21.2-7.1638383179
 WORKDIR /work/
 COPY target/*-runner.jar /work/application.jar
+RUN ls /work/
 RUN chmod 775 /work/application.jar
 EXPOSE 8080
 
