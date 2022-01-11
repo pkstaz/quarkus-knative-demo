@@ -3,11 +3,11 @@
 #
 # Before building the docker image run:
 #
-# mvn package
+mvn package
 #
 # Then, build the image with:
 #
-# docker build -f src/main/docker/Dockerfile.jvm -t quarkus/cache-quickstart-jvm .
+docker build -f src/main/docker/Dockerfile.jvm -t quarkus/cache-quickstart-jvm .
 #
 # Then run the container using:
 #
