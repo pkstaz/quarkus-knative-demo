@@ -1,6 +1,6 @@
 FROM registry.access.redhat.com/ubi8/openjdk-8:1.10-10.1638383025
 WORKDIR /home/jboss
-COPY /home/jboss/* /deployments
+# COPY target/*-runner /work/application
 # RUN chmod 775 /work
 # EXPOSE 8080
 
