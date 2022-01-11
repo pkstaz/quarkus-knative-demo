@@ -1,4 +1,4 @@
-name: myapp-publish
+name: quarkus-app-publish
 on:
   push:
     branches:
@@ -6,12 +6,12 @@ on:
     tags:
       - '*'
     paths:
-      - myapp/version.json
+      - quarkus-app/version.json
 jobs:
   build:
     env:
-      context: myapp
-      image_name: myapp
+      context: quarkus-app
+      image_name: quarkus-app
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
